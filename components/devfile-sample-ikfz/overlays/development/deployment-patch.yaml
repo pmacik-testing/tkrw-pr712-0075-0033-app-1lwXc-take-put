@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ikfz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0033-tenant/tkrw-pr712-0075-0033-app/devfile-sample-ikfz@sha256:92d3f95e68048669b846d942794925e9af8fe663389c959017f2915b2e056a92
+        name: my-nodejs
+        resources: {}
+status: {}
